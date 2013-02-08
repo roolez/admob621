@@ -1,0 +1,15 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the java portion of the admob extension on android
+platform JAVA
+
+files
+{
+    (source/android)
+    admob.java
+}
+
+librarypath "lib/android/GoogleAdMobAdsSdk-6.2.1.jar"
+librarypath "$MARMALADE_ROOT/s3e/deploy/plugins/android/android.jar"
+librarypath "$MARMALADE_ROOT/s3e/loader/android/s3e_release.jar"
+
+option output-name=lib/android/admob.jar
